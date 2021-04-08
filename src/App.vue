@@ -1,17 +1,23 @@
 <template>
-  <Home msg="Welcome to Your Vue.js + TypeScript App" />
+  <ul>
+    <li>
+      <!-- <router-link to="/">home</router-link> -->
+      <router-link :to="{ name: 'home' }">home</router-link>
+      <router-link :to="{ name: 'list' }">list</router-link>
+      <router-link :to="{ name: 'user' }">user</router-link>
+      <!-- <router-link to="/user">user</router-link> -->
+    </li>
+  </ul>
+  <router-view></router-view>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Home from "./components/Home.vue";
+import { defineComponent } from "vue";
 
-@Options({
-  components: {
-    Home,
-  },
-})
-export default class App extends Vue {}
+export default defineComponent({
+  name: "App",
+  components: {},
+});
 </script>
 
 <style>

@@ -6,21 +6,20 @@
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
-    "experimentalDecorators": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "types": [
       "webpack-env"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
+    // "paths": {
+    //   "@/*": [
+    //     "src/*"
+    //   ]
+    // },
     "lib": [
       "esnext",
       "dom",
@@ -28,6 +27,7 @@
       "scripthost"
     ]
   },
+  "extends": "./tsconfig.paths.json",
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",

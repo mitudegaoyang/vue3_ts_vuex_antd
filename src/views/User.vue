@@ -1,0 +1,25 @@
+<template>
+  <div class="user">
+    <h1>user</h1>
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "User",
+
+  data() {
+    return {
+      // `list` will be reactive as it is declared via `data` hook.
+      msg: "this is user",
+    };
+  },
+});
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
