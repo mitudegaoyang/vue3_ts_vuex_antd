@@ -1,4 +1,6 @@
-# vue3-demo
+# vue3-ts-vuex-antd
+
+项目为vue3+ts+vue-router+vuex+antd
 
 ## Project setup
 
