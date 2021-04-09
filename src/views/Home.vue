@@ -3,7 +3,7 @@
     <h1>home</h1>
     <div>{{ msg }}</div>
     <div>{{ count }}</div>
-    <button @click="incCount">count++</button>
+    <a-button @click="incCount">count++</a-button>
     <div>{{ num }}</div>
   </div>
 </template>
