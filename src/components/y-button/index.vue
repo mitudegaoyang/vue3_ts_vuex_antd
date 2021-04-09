@@ -1,16 +1,12 @@
 <template>
-  <div class="login">
-    <h1>login</h1>
-    <h1>{{ msg }}</h1>
-    <a-button>按钮</a-button>
-  </div>
+  <a-button>按钮</a-button>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Login",
+  name: "Button",
 
   data() {
     return {

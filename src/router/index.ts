@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 // 引入组件
-import Container from "./views/Container.vue";
-import Login from "./views/acount/Login.vue";
-import Home from "./views/Home.vue";
-import User from "./views/User.vue";
-import List from "./views/list/List.vue";
-import ListDetail from "./views/list/ListDetail.vue";
+import Container from "../views/Container.vue";
+import Login from "../views/acount/Login.vue";
+import Home from "../views/Home.vue";
+import User from "../views/User.vue";
+import List from "../views/list/List.vue";
+import ListDetail from "../views/list/ListDetail.vue";
 
 // 配置路由
 const routes = [
