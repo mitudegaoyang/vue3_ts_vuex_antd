@@ -5,6 +5,7 @@ import { Store, createStore } from 'vuex'
 declare module '@vue/runtime-core' {
     // declare your own store states
     interface State {
+        isLogin: boolean,
         count: number,
         list: string[]
     }
@@ -19,6 +20,7 @@ const store = createStore({
     state() {
         // 数据
         return {
+            isLogin: false,
             count: 1,
             list: []
         }
@@ -33,6 +35,12 @@ const store = createStore({
             for (let i = 0; i < 10; i++) {
                 state.list.push(`我是第${i}项`);
             }
+        },
+        login(state: any) {
+            state.isLogin = true;
+        },
+        logout(state: any) {
+            state.isLogin = false;
         }
     },
     getters: {

@@ -1,6 +1,13 @@
 # vue3-ts-vuex-antd
 
-项目为vue3+ts+vue-router+vuex+antd
+## 技术栈
+
+* vue3
+* ts
+* vue-router
+* vuex
+* Antd
+* axios
 
 ## Project setup
 

@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import routers from './router'
 import store from './store'
-// 引入antd
+// 引入antd-vue
 import Antd from 'ant-design-vue'
 import './styles/global.less'
 

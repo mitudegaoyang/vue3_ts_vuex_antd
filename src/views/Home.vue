@@ -4,7 +4,15 @@
     <div>{{ msg }}</div>
     <div>{{ count }}</div>
     <a-button @click="incCount">count++</a-button>
+    <a-button @click="logout">logout</a-button>
     <div>{{ num }}</div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
   </div>
 </template>
 
@@ -23,6 +31,9 @@ export default defineComponent({
   methods: {
     incCount(): void {
       this.$store.commit("incCount");
+    },
+    logout(): void {
+      this.$router.push("login");
     },
   },
   computed: {

@@ -2,7 +2,7 @@
   <div class="login">
     <h1>login</h1>
     <h1>{{ msg }}</h1>
-    <a-button>按钮</a-button>
+    <a-button @click="login">登录</a-button>
   </div>
 </template>
 
@@ -16,6 +16,17 @@ export default defineComponent({
     return {
       msg: "this is login",
     };
+  },
+
+  methods: {
+    login(): void {
+      this.$store.commit("login");
+      this.$router.push("home");
+    },
+  },
+
+  created() {
+    this.$store.commit("logout");
   },
 
   mounted() {},
